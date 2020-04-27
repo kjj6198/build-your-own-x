@@ -458,6 +458,7 @@
 * [**TypeScript**: _Tiny Package Manager: Learns how npm or Yarn works_](https://github.com/g-plane/tiny-package-manager)
 * [**C#**: _Build Your Own LINQ Implementation_](https://codeblog.jonskeet.uk/category/edulinq/)
 * [_Build an 8-bit computer from Scratch_](https://github.com/danistefanovic/build-your-own-x/issues/415)
+* [**JavaScript**: _I wrote my module bundler_](https://lihautan.com/i-wrote-my-module-bundler/)
 
 ## How to contribute
 
