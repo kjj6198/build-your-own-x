@@ -322,6 +322,7 @@
 * [**Rust**: _Learning Parser Combinators With Rust_](https://bodil.lol/parser-combinators/)
 * [**Swift**: _Building a LISP from scratch with Swift_](https://www.uraimo.com/2017/02/05/building-a-lisp-from-scratch-with-swift/)
 * [**TypeScript**: _Build your own WebAssembly Compiler_](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
+* [**C#**: _How I built a Simple Compiler - Markdown to HTML_](https://medium.com/@Jozefchmelar/how-i-built-a-simple-compiler-markdown-to-html-4da63dc79a94)
 
 #### Build your own `Regex Engine`
 
