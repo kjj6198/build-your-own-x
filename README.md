@@ -133,6 +133,8 @@
 * [**JavaScript**: _Dagoba: an in-memory graph database_](http://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html)
 * [**Python**: _DBDB: Dog Bed Database_](http://aosabook.org/en/500L/dbdb-dog-bed-database.html)
 * [**Python**: _Write your own miniature Redis with Python_](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/)
+* [**Go**: _Database basics: writing a SQL database from scratch in Go_](https://notes.eatonphil.com/database-basics.html)
+* [**Ruby**: _Build Your Own Redis_](https://rohitpaulk.com/articles/redis-0)
 
 #### Build your own `Docker`
 
