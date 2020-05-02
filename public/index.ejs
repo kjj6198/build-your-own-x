@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <%- head %>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/build/bundle.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <%- html %>
+    </div>
+    <script>
+      window.__BUILD_YOUR_OWN_DATA__ = <%- data %>
+    </script>
+    <script defer src="/build/bundle.js"></script>
+  </body>
+</html>

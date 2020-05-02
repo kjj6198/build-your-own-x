@@ -63,21 +63,21 @@
   }
   .list a {
     display: inline-block;
-    color: #7b8788;
+    color: var(--link);
   }
 
   .lang {
-    font-size: 15px;
-    color: #fff;
     display: inline-block;
     padding: 5px;
-    line-height: 1;
-    background-color: #786d70;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0 1px 0 #413335;
     margin-right: 5px;
     margin-bottom: 5px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1;
+    background-color: var(--tag);
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 var(--sub);
     cursor: pointer;
   }
 
@@ -87,35 +87,46 @@
   }
 </style>
 
-<div>
-  <h2>Languages</h2>
-  {#each languages.filter((lang) => !selected.includes(lang)) as lang (lang)}
-    <button
-      out:send={{ key: lang }}
-      in:receive={{ key: lang }}
-      class="lang"
-      on:click={() => handleLangToggle(lang)}>
-      {lang}
-    </button>
-  {/each}
+<div class="select">
+  <h2 id="language-select">Languages (click to select)</h2>
+  <div role="group" aria-labelledby="language-select">
+    {#each languages.filter((lang) => !selected.includes(lang)) as lang (lang)}
+      <button
+        aria-pressed="false"
+        out:send={{ key: lang }}
+        in:receive={{ key: lang }}
+        class="lang"
+        on:click={() => handleLangToggle(lang)}>
+        {lang}
+      </button>
+    {/each}
+  </div>
 </div>
-<div>
-  <h2>Selected</h2>
-  {#each selected as lang (lang)}
-    <button
-      animate:flip={{ duration: 200 }}
-      in:receive={{ key: lang }}
-      class="lang"
-      on:click={() => handleLangToggle(lang)}>
-      {lang}
-    </button>
-  {/each}
+<div class="select">
+  <h2 id="selected">Selected</h2>
+  <div role="group" aria-labelledby="selected">
+    {#each selected as lang (lang)}
+      <button
+        aria-pressed="true"
+        animate:flip={{ duration: 200 }}
+        in:receive={{ key: lang }}
+        class="lang"
+        on:click={() => handleLangToggle(lang)}>
+        {lang}
+      </button>
+    {/each}
+  </div>
 </div>
+{#if selected.length}
+  <p role="status">Filtered article with language {selected.join(',')}</p>
+{/if}
 
 {#each categories as category (category.id)}
   <div>
-    <ScrollAnchor href="#{category.id}">
-      <h2 class="title" id={category.id}>{category.text}</h2>
+    <ScrollAnchor href="#{category.id}" isTitle>
+      <h2 class="title" id={category.id}>
+        {category.text.replace(/Build your own /, '')}
+      </h2>
     </ScrollAnchor>
   </div>
   <div class="list">

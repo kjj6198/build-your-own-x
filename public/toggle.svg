@@ -1,0 +1,12 @@
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Navigation Toggle</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-790.000000, -1813.000000)" fill="#5d5555">
+            <g transform="translate(790.000000, 1813.000000)">
+                <rect x="0" y="0" width="24" height="3"></rect>
+                <rect x="0" y="9" width="24" height="3"></rect>
+                <rect x="0" y="18" width="24" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
