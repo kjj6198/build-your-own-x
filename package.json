@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "node script.js && rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
