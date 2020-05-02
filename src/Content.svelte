@@ -160,6 +160,6 @@
   <a href="https://creativecommons.org/publicdomain/zero/1.0/">
     <img
       alt="License-CC0"
-      src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" />
+      src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" />
   </a>
 </p>

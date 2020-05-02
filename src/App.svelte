@@ -130,7 +130,7 @@
 
 <svelte:head>
   <title>Build Your Own X</title>
-  <meta property="og:url" content="https://build-your-own.kalan.dev" />
+  <meta property="og:url" content="https://build-your-own-x.now.sh" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Build Your Own X" />
   <meta
@@ -151,7 +151,7 @@
   <meta property="twitter:creator" content="@kalanyei" />
   <meta
     property="og:image"
-    content="https://build-your-own.kalan.dev/feynman.png" />
+    content="https://build-your-own-x.now.sh/feynman.png" />
   <meta property="og:image:alt" content="Feynman" />
 </svelte:head>
 
