@@ -139,8 +139,6 @@
     site is created and maintained by Kalan which converted github README.md to
     website, and probably will add more opinionated resource. Follow me on
     Twitter or contrinute your article link on Github is always welcomed!" />
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:creator" content="@kalanyei" />
   <meta
     property="og:description"
     content="This repo is forked from awesome anistefanovic/build-your-own-x ,

@@ -49,3 +49,4 @@ bower_components
 .env.test
 
 .now
+public/index.html
