@@ -7,18 +7,6 @@
 </script>
 
 <style>
-  :root {
-    --textColor: #463d3d;
-    --theme: #fff;
-    --bgColor: #f4f4f4;
-    --highlight: #fece8e;
-    --tag: #786d70;
-    --sub: #413335;
-    --header-height: 55px;
-    --border: #f3f0f3;
-    --link: #515d5e;
-  }
-
   .container {
     width: 95%;
     max-width: 1300px;
@@ -81,9 +69,6 @@
   }
 
   @media (max-width: 900px) {
-    :root {
-      --header-height: 40px;
-    }
     nav {
       display: none;
     }

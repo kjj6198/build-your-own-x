@@ -1,3 +1,15 @@
+:root {
+  --textColor: #463d3d;
+  --theme: #fff;
+  --bgColor: #f4f4f4;
+  --highlight: #fece8e;
+  --tag: #786d70;
+  --sub: #413335;
+  --header-height: 55px;
+  --border: #f3f0f3;
+  --link: #515d5e;
+}
+
 *,
 *::after,
 *::before {
