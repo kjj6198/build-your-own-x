@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "build-your-own-x",
   "version": "1.0.0",
   "scripts": {
     "build": "node script.js && rollup -c",
