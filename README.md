@@ -452,6 +452,7 @@
 - [**C#**: _Build Your Own LINQ Implementation_](https://codeblog.jonskeet.uk/category/edulinq/)
 - [_Build an 8-bit computer from Scratch_](https://github.com/danistefanovic/build-your-own-x/issues/415)
 - [**JavaScript**: _I wrote my module bundler_](https://lihautan.com/i-wrote-my-module-bundler/)
+- [**Firebase**: Build TODO app by firebase (Japanese)](https://www.youtube.com/channel/UCmbwk54FJxio-rBN2o6L7zQ)
 
 ## How to contribute
 
