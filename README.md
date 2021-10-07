@@ -27,6 +27,8 @@
     - [Build your own `Voxel Engine`](#build-your-own-voxel-engine)
     - [Build your own `Web Search Engine`](#build-your-own-web-search-engine)
     - [Build your own `Web Server`](#build-your-own-web-server)
+    - [Build your own `IoT`](#build-your-own-iot)
+    - [Build your own `Keyboard`](#build-your-own-keyboard)
     - [Uncategorized](#uncategorized)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
@@ -386,6 +388,18 @@
 - [**Ruby**: _Building a simple websockets server from scratch in Ruby_](http://blog.honeybadger.io/building-a-simple-websockets-server-from-scratch-in-ruby/)
 - [**C**: Build a HTTP Server from Scratch in C](https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa)
 
+## Build Your own `IoT`
+
+- [Learn AVR programming](http://www.ladyada.net/learn/avr/)
+- [AVR tutorial](http://www.rjhcoding.com/index.php)
+
+## Build Your own `Keyboard`
+
+- [How to build your own keyboard (with kit)](https://www.tomshardware.com/how-to/build-custom-mechanical-keyboard)
+- [静電容量自作キーボードが出来るまで](https://note.com/sirojake/n/ncad44f7285cd)
+- [静電容量無接点方式](https://landfilljp.wordpress.com/2021/03/20/microtron/)
+
+
 #### Uncategorized
 
 - [**(any)**: _From NAND to Tetris: Building a Modern Computer From First Principles_](http://nand2tetris.org/)
@@ -446,6 +460,9 @@
 - [_Build an 8-bit computer from Scratch_](https://github.com/danistefanovic/build-your-own-x/issues/415)
 - [**JavaScript**: _I wrote my module bundler_](https://lihautan.com/i-wrote-my-module-bundler/)
 - [**Firebase**: Build TODO app by firebase (Japanese)](https://www.youtube.com/channel/UCmbwk54FJxio-rBN2o6L7zQ)
+
+
+
 
 ## How to contribute
 
