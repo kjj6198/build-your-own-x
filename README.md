@@ -391,6 +391,7 @@
 
 - [Learn AVR programming](http://www.ladyada.net/learn/avr/)
 - [AVR tutorial](http://www.rjhcoding.com/index.php)
+- [USB stack](https://www.beyondlogic.org/usbnutshell/usb1.shtml)
 
 #### Build Your own `Keyboard`
 
