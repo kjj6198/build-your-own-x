@@ -30,6 +30,7 @@
     - [Build your own `Web Server`](#build-your-own-web-server)
     - [Build your own `IoT`](#build-your-own-iot)
     - [Build your own `Keyboard`](#build-your-own-keyboard)
+    - [Build your own `AI`](#build-your-own-ai)
     - [Uncategorized](#uncategorized)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
@@ -328,6 +329,7 @@
 * [**Rust**: _Learning Parser Combinators With Rust_](https://bodil.lol/parser-combinators/)
 * [**Swift**: _Building a LISP from scratch with Swift_](https://www.uraimo.com/2017/02/05/building-a-lisp-from-scratch-with-swift/)
 * [**TypeScript**: _Build your own WebAssembly Compiler_](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
+* [**any**: _Crafting Interpreters_](https://craftinginterpreters.com/)
 
 #### Build your own `Regex Engine`
 
@@ -415,6 +417,10 @@
 - [How to build your own keyboard (with kit)](https://www.tomshardware.com/how-to/build-custom-mechanical-keyboard)
 - [静電容量自作キーボードが出来るまで](https://note.com/sirojake/n/ncad44f7285cd)
 - [静電容量無接点方式](https://landfilljp.wordpress.com/2021/03/20/microtron/)
+
+#### Build Your own `AI`
+
+- [**Python**: _Neural Networks: Zero to Hero_](https://www.youtube.com/watch?v=VMj-3S1tku0)
 
 #### Uncategorized
 
