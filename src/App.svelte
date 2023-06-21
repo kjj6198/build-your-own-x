@@ -34,7 +34,7 @@
     padding: 20px;
     background-color: var(--theme);
     max-height: 100%;
-    height: 100%;
+    height: calc(100dvh - var(--header-height));
     overflow: auto;
     margin-right: 20px;
   }
