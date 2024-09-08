@@ -133,7 +133,7 @@
 - [**Python**: _Write your own miniature Redis with Python_](http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/)
 - [**Go**: _Database basics: writing a SQL database from scratch in Go_](https://notes.eatonphil.com/database-basics.html)
 - [**Ruby**: _Build Your Own Redis_](https://rohitpaulk.com/articles/redis-0)
-- [**C**: _Writing a Time Series Database from scratch_]([https://fabxc.org/tsdb/](https://web.archive.org/web/20210803115658/https://fabxc.org/tsdb/))
+- [**C**: _Writing a Time Series Database from scratch_](https://web.archive.org/web/20210803115658/https://fabxc.org/tsdb/)
 - [**C++**: _Build Your Own Redis from Scratch_](https://build-your-own.org/)
 
 #### Build your own `Docker`
