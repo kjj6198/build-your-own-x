@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light dark;
+
+  /* Light is a sheet of paper, dark is Feynman's blackboard. */
+  --paper: light-dark(oklch(0.972 0.012 85), oklch(0.245 0.022 165));
+  --paper-sunk: light-dark(oklch(0.942 0.016 82), oklch(0.285 0.024 165));
+  --ink: light-dark(oklch(0.23 0.02 55), oklch(0.94 0.012 95));
+  --ink-soft: light-dark(oklch(0.46 0.02 60), oklch(0.77 0.02 130));
+  --rule: light-dark(oklch(0.86 0.016 80), oklch(0.37 0.02 165));
+  --accent: light-dark(oklch(0.54 0.18 33), oklch(0.86 0.13 88));
+
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'IBM Plex Sans Variable', system-ui, sans-serif;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --toolbar-height: 4.25rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--accent) 30%, transparent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -1,5 +1,7 @@
 /node_modules/
-/public/build/
+/build/
+/.svelte-kit/
+/.vercel/
 
 .vscode
 .DS_Store
@@ -49,4 +51,4 @@ bower_components
 .env.test
 
 .now
-public/index.html
+.context/
