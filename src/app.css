@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light dark;
+
+  --gray-25: oklch(0.99 0.003 250);
+  --gray-50: oklch(0.97 0.005 250);
+  --gray-150: oklch(0.89 0.008 250);
+  --gray-200: oklch(0.845 0.01 250);
+  --gray-400: oklch(0.64 0.012 250);
+  --gray-500: oklch(0.5 0.012 250);
+  --gray-700: oklch(0.335 0.015 250);
+  --gray-800: oklch(0.21 0.014 250);
+  --gray-900: oklch(0.18 0.01 250);
+  --green-300: oklch(0.86 0.13 155);
+  --green-800: oklch(0.34 0.085 155);
+
+  /* Every text pair measures at least 10:1 against both backgrounds. */
+  --color-bg: light-dark(var(--gray-25), var(--gray-900));
+  --color-bg-sunken: light-dark(var(--gray-50), var(--gray-800));
+  --color-bg-inverse: light-dark(var(--gray-800), var(--gray-50));
+  --color-text: light-dark(var(--gray-800), var(--gray-50));
+  --color-text-secondary: light-dark(var(--gray-700), var(--gray-200));
+  --color-text-inverse: light-dark(var(--gray-25), var(--gray-900));
+  --color-border: light-dark(var(--gray-150), var(--gray-700));
+  --color-border-strong: light-dark(var(--gray-400), var(--gray-500));
+  --color-accent: light-dark(var(--green-800), var(--green-300));
+  --color-overlay: color-mix(in oklch, var(--gray-900) 45%, transparent);
+
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'IBM Plex Sans Variable', system-ui, sans-serif;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --toolbar-height: 4.25rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--color-accent) 30%, transparent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
