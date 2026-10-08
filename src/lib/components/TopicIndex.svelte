@@ -13,27 +13,19 @@
 </script>
 
 <ol class="index" role="list">
-  {#each sections as { topic, number, tutorials } (topic.id)}
+  {#each sections.filter((section) => section.tutorials.length > 0) as { topic, number, tutorials } (topic.id)}
     <li>
-      {#if tutorials.length > 0}
-        <a
-          href="#{topic.id}"
-          class="entry"
-          aria-label="{topic.name}, {countGuides(tutorials.length)}"
-          aria-current={topic.id === activeId ? 'location' : undefined}
-          onclick={onnavigate}
-        >
-          <span class="number">{number}</span>
-          <span class="name">{topic.name}</span>
-          <span class="count">{tutorials.length}</span>
-        </a>
-      {:else}
-        <span class="entry" aria-disabled="true">
-          <span class="number">{number}</span>
-          <span class="name">{topic.name}</span>
-          <span class="count">0</span>
-        </span>
-      {/if}
+      <a
+        href="#{topic.id}"
+        class="entry"
+        aria-label="{topic.name}, {countGuides(tutorials.length)}"
+        aria-current={topic.id === activeId ? 'location' : undefined}
+        onclick={onnavigate}
+      >
+        <span class="number">{number}</span>
+        <span class="name">{topic.name}</span>
+        <span class="count">{tutorials.length}</span>
+      </a>
     </li>
   {/each}
 </ol>
@@ -49,11 +41,9 @@
     border-radius: 0.375rem;
     font-size: 0.875rem;
     line-height: 1.35;
-    color: var(--ink-soft);
+    color: var(--color-text);
     text-decoration: none;
-    transition:
-      color 150ms,
-      background-color 150ms;
+    transition: background-color 150ms;
   }
 
   .number,
@@ -62,21 +52,15 @@
     font-variant-numeric: tabular-nums;
   }
 
-  a.entry:hover {
-    color: var(--ink);
-    background: var(--paper-sunk);
+  .entry:hover {
+    background: var(--color-bg-sunken);
   }
 
-  a.entry[aria-current] {
-    color: var(--ink);
+  .entry[aria-current] {
     font-weight: 600;
   }
 
-  a.entry[aria-current] .number {
-    color: var(--accent);
-  }
-
-  .entry[aria-disabled] {
-    opacity: 0.4;
+  .entry[aria-current] .number {
+    color: var(--color-accent);
   }
 </style>

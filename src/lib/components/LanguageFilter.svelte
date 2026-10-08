@@ -69,7 +69,7 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .chips {
@@ -85,7 +85,7 @@
     gap: 0.375rem;
     min-height: 2rem;
     padding: 0.25rem 0.75rem;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--color-border-strong);
     border-radius: 999px;
     background: transparent;
     font-size: 0.875rem;
@@ -99,7 +99,7 @@
 
   .chip:hover,
   .more:hover {
-    border-color: var(--ink-soft);
+    background: var(--color-bg-sunken);
   }
 
   .chip:active,
@@ -110,22 +110,22 @@
   .count {
     font-size: 0.75rem;
     font-variant-numeric: tabular-nums;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .chip[aria-pressed='true'] {
-    border-color: var(--ink);
-    background: var(--ink);
-    color: var(--paper);
+    border-color: var(--color-bg-inverse);
+    background: var(--color-bg-inverse);
+    color: var(--color-text-inverse);
   }
 
   .chip[aria-pressed='true'] .count {
-    color: color-mix(in oklch, var(--paper) 70%, transparent);
+    color: var(--color-text-inverse);
   }
 
   .more {
     border-style: dashed;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   @media (max-width: 40rem) {

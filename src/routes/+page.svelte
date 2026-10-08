@@ -151,12 +151,14 @@
   </header>
 
   <div class="hero">
-    <figure class="quote">
-      <blockquote>
-        <p>What I cannot create, I do not understand.</p>
-      </blockquote>
-      <figcaption>Richard Feynman’s blackboard, 1988</figcaption>
-    </figure>
+    <img
+      class="feynman"
+      src="/feynman.png"
+      alt="Richard Feynman at a blackboard: What I cannot create, I do not understand"
+      width="1123"
+      height="629"
+      fetchpriority="high"
+    />
     <p class="lede">
       {catalog.tutorialCount} guides to rebuilding the technology you use every day,
       from databases and shells to operating systems. Pick a topic and a language,
@@ -274,8 +276,8 @@
     z-index: 10;
     padding: 0.5rem 0.875rem;
     border-radius: 0.375rem;
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--color-bg-inverse);
+    color: var(--color-text-inverse);
     translate: 0 -200%;
   }
 
@@ -302,7 +304,7 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 1.25rem;
-    border-bottom: 1px solid var(--rule);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .wordmark {
@@ -314,7 +316,7 @@
   }
 
   .wordmark em {
-    color: var(--accent);
+    color: var(--color-accent);
   }
 
   .elsewhere {
@@ -328,15 +330,15 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 999px;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
     transition:
       color 150ms,
       background-color 150ms;
   }
 
   .elsewhere a:hover {
-    color: var(--ink);
-    background: var(--paper-sunk);
+    color: var(--color-text);
+    background: var(--color-bg-sunken);
   }
 
   .elsewhere :global(svg) {
@@ -349,38 +351,13 @@
     display: grid;
     grid-template-columns: subgrid;
     row-gap: 1.75rem;
-    padding-block: clamp(3rem, 9vw, 7rem) clamp(2.5rem, 6vw, 4.5rem);
+    padding-block: clamp(1.5rem, 4vw, 3rem) clamp(2.5rem, 6vw, 4.5rem);
   }
 
-  .quote {
+  .feynman {
     grid-column: 1 / -1;
-  }
-
-  .quote p {
-    max-width: 16ch;
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 1.4rem + 5vw, 5.5rem);
-    font-style: italic;
-    font-weight: 380;
-    line-height: 0.98;
-    letter-spacing: -0.025em;
-    text-wrap: balance;
-  }
-
-  .quote figcaption {
-    margin-top: 1.25rem;
-    font-size: 0.875rem;
-    color: var(--ink-soft);
-  }
-
-  .quote figcaption::before {
-    content: '';
-    display: inline-block;
-    width: 2rem;
-    height: 1px;
-    margin-right: 0.75rem;
-    vertical-align: middle;
-    background: currentColor;
+    width: 100%;
+    height: auto;
   }
 
   .lede {
@@ -389,29 +366,6 @@
     font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
     line-height: 1.5;
     text-wrap: pretty;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .quote p,
-    .quote figcaption,
-    .lede {
-      animation: rise 700ms var(--ease-out) both;
-    }
-
-    .quote figcaption {
-      animation-delay: 120ms;
-    }
-
-    .lede {
-      animation-delay: 200ms;
-    }
-  }
-
-  @keyframes rise {
-    from {
-      opacity: 0;
-      translate: 0 0.75rem;
-    }
   }
 
   .sidebar {
@@ -431,7 +385,7 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   main {
@@ -450,8 +404,8 @@
     align-items: center;
     gap: 0.75rem;
     height: var(--toolbar-height);
-    border-bottom: 1px solid var(--rule);
-    background: var(--paper);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg);
   }
 
   .search {
@@ -466,7 +420,7 @@
     left: 0.875rem;
     width: 1.125rem;
     height: 1.125rem;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
     pointer-events: none;
   }
 
@@ -474,9 +428,9 @@
     width: 100%;
     height: 2.75rem;
     padding: 0 2.75rem 0 2.625rem;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--color-border-strong);
     border-radius: 0.5rem;
-    background: var(--paper-sunk);
+    background: var(--color-bg-sunken);
     font-size: 1rem;
     transition:
       border-color 150ms,
@@ -484,17 +438,13 @@
   }
 
   input::placeholder {
-    color: var(--ink-soft);
-  }
-
-  input:hover {
-    border-color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   input:focus-visible {
     outline: none;
-    border-color: var(--ink);
-    background: var(--paper);
+    border-color: var(--color-accent);
+    background: var(--color-bg);
   }
 
   input::-webkit-search-cancel-button {
@@ -508,11 +458,11 @@
     place-items: center;
     min-width: 1.5rem;
     height: 1.5rem;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--color-border);
     border-radius: 0.25rem;
     font-family: inherit;
     font-size: 0.75rem;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
     pointer-events: none;
   }
 
@@ -532,11 +482,11 @@
     font-size: 0.875rem;
     font-variant-numeric: tabular-nums;
     text-align: right;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .status strong {
-    color: var(--ink);
+    color: var(--color-text);
   }
 
   .topics-button,
@@ -547,20 +497,20 @@
     gap: 0.5rem;
     height: 2.75rem;
     padding-inline: 0.875rem;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--color-border-strong);
     border-radius: 0.5rem;
     background: transparent;
     font-size: 0.9375rem;
     font-weight: 500;
     transition:
-      border-color 150ms,
+      background-color 150ms,
       scale 150ms var(--ease-out);
   }
 
   .topics-button:hover,
   .close:hover,
   .clear:hover {
-    border-color: var(--ink-soft);
+    background: var(--color-bg-sunken);
   }
 
   .topics-button:active,
@@ -590,14 +540,14 @@
     justify-items: start;
     gap: 0.5rem;
     padding: 3rem 0;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .empty-title {
     font-family: var(--font-display);
     font-size: 1.75rem;
     line-height: 1.2;
-    color: var(--ink);
+    color: var(--color-text);
   }
 
   .clear {
@@ -611,13 +561,13 @@
     max-width: 38rem;
     margin-top: 3rem;
     padding-block: 2rem 4rem;
-    border-top: 1px solid var(--ink);
+    border-top: 1px solid var(--color-border-strong);
     font-size: 0.875rem;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .colophon a {
-    color: var(--ink);
+    color: var(--color-text);
     text-underline-offset: 0.2em;
   }
 
@@ -629,15 +579,15 @@
     margin: 0;
     padding: 1rem 1.25rem 2rem;
     border: none;
-    border-right: 1px solid var(--rule);
-    background: var(--paper);
-    color: var(--ink);
+    border-right: 1px solid var(--color-border);
+    background: var(--color-bg);
+    color: var(--color-text);
     overflow-y: auto;
     overscroll-behavior: contain;
   }
 
   .sheet::backdrop {
-    background: oklch(0.2 0.02 55 / 0.35);
+    background: var(--color-overlay);
   }
 
   .sheet-header {

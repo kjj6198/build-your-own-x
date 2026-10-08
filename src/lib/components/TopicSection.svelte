@@ -51,14 +51,14 @@
     align-items: baseline;
     gap: 0.875rem;
     padding-bottom: 0.875rem;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--color-border-strong);
   }
 
   .number {
     font-size: 0.875rem;
     font-weight: 600;
     font-variant-numeric: tabular-nums;
-    color: var(--accent);
+    color: var(--color-accent);
   }
 
   h2 {
@@ -73,12 +73,12 @@
   .count {
     font-size: 0.8125rem;
     font-variant-numeric: tabular-nums;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
     white-space: nowrap;
   }
 
   li {
-    border-bottom: 1px solid var(--rule);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .tutorial {
@@ -106,12 +106,12 @@
     flex-wrap: wrap;
     gap: 0 0.75rem;
     font-size: 0.8125rem;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
   }
 
   .languages {
     font-weight: 600;
-    color: var(--accent);
+    color: var(--color-accent);
   }
 
   .format {
@@ -128,7 +128,7 @@
     align-self: center;
     width: 1.125rem;
     height: 1.125rem;
-    color: var(--ink-soft);
+    color: var(--color-text-secondary);
     opacity: 0;
     translate: -0.25rem 0.25rem;
     transition:
@@ -138,7 +138,7 @@
 
   @media (hover: hover) {
     .tutorial:hover {
-      background: var(--paper-sunk);
+      background: var(--color-bg-sunken);
     }
 
     .tutorial:hover .title {

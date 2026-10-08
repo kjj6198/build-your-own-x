@@ -1,13 +1,29 @@
 :root {
   color-scheme: light dark;
 
-  /* Light is a sheet of paper, dark is Feynman's blackboard. */
-  --paper: light-dark(oklch(0.972 0.012 85), oklch(0.245 0.022 165));
-  --paper-sunk: light-dark(oklch(0.942 0.016 82), oklch(0.285 0.024 165));
-  --ink: light-dark(oklch(0.23 0.02 55), oklch(0.94 0.012 95));
-  --ink-soft: light-dark(oklch(0.46 0.02 60), oklch(0.77 0.02 130));
-  --rule: light-dark(oklch(0.86 0.016 80), oklch(0.37 0.02 165));
-  --accent: light-dark(oklch(0.54 0.18 33), oklch(0.86 0.13 88));
+  --gray-25: oklch(0.99 0.003 250);
+  --gray-50: oklch(0.97 0.005 250);
+  --gray-150: oklch(0.89 0.008 250);
+  --gray-200: oklch(0.845 0.01 250);
+  --gray-400: oklch(0.64 0.012 250);
+  --gray-500: oklch(0.5 0.012 250);
+  --gray-700: oklch(0.335 0.015 250);
+  --gray-800: oklch(0.21 0.014 250);
+  --gray-900: oklch(0.18 0.01 250);
+  --green-300: oklch(0.86 0.13 155);
+  --green-800: oklch(0.34 0.085 155);
+
+  /* Every text pair measures at least 10:1 against both backgrounds. */
+  --color-bg: light-dark(var(--gray-25), var(--gray-900));
+  --color-bg-sunken: light-dark(var(--gray-50), var(--gray-800));
+  --color-bg-inverse: light-dark(var(--gray-800), var(--gray-50));
+  --color-text: light-dark(var(--gray-800), var(--gray-50));
+  --color-text-secondary: light-dark(var(--gray-700), var(--gray-200));
+  --color-text-inverse: light-dark(var(--gray-25), var(--gray-900));
+  --color-border: light-dark(var(--gray-150), var(--gray-700));
+  --color-border-strong: light-dark(var(--gray-400), var(--gray-500));
+  --color-accent: light-dark(var(--green-800), var(--green-300));
+  --color-overlay: color-mix(in oklch, var(--gray-900) 45%, transparent);
 
   --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
   --font-body: 'IBM Plex Sans Variable', system-ui, sans-serif;
@@ -24,8 +40,8 @@
 }
 
 html {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-body);
   font-size: 100%;
   line-height: 1.55;
@@ -75,12 +91,12 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
 ::selection {
-  background: color-mix(in oklch, var(--accent) 30%, transparent);
+  background: color-mix(in oklch, var(--color-accent) 30%, transparent);
 }
 
 .visually-hidden {
